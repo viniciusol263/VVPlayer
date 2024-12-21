@@ -1,4 +1,4 @@
-![badge](https://github.com/viniciusol263/VVPlayer/actions/workflows/cmake-single-platform.yml/badge.svg?branch=main)
+![badge](https://github.com/viniciusol263/VVPlayer/actions/workflows/cmake-single-platform.yml/badge.svg)
 
 # VVPlayer
 VVPlayer(Vini Video Player) is a high-performance and high-compability C++23 video player.
