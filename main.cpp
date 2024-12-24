@@ -1,7 +1,9 @@
 #include <print>
 
-int main()
+#include "VVPlayer.h"
+
+int main(int argc, char** argv)
 {
-    std::print("This is VVPlayer");
+    VVPlayer::VVPlayer vvPlayer;
     return 0;
 }
