@@ -9,7 +9,15 @@ class VVPlayerConanFile(ConanFile):
     generators = "CMakeDeps", "CMakeToolchain"
 
     def requirements(self):
-        self.requires("sdl/2.30.9")
+        self.requires("sfml/2.6.2")
+        self.requires("zlib/1.3.1", force=True)
+
+    def configure(self):
+        self.options["sfml/*"].audio = True
+        self.options["sfml/*"].shared = False
+        self.options["sfml/*"].window = True
+        self.options["sfml/*"].network = True
+        self.options["sfml/*"].graphics = True
 
     def layout(self):
         cmake_layout(self)
